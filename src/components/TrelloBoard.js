@@ -6,6 +6,8 @@ import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import styled from "styled-components";
 import { sort, setActiveBoard } from "../actions";
 import { Link } from "react-router-dom";
+import Icon from "@material-ui/core/Icon";
+
 
 const ListsContainer = styled.div`
   display: flex;
@@ -52,7 +54,9 @@ class TrelloBoard extends PureComponent {
 
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <Link to="/">Go Back</Link>
+        <Link to="/">
+          <Icon>Home</Icon>
+        </Link>
         <h2>{board.title}</h2>
         <Droppable droppableId="all-lists" direction="horizontal" type="list">
           {provided => (

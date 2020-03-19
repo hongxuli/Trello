@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { addBoard } from "../actions";
 import BoardThumbnail from "./BoardThumbnail";
 
+
 const Thumbnails = styled.div`
   flex: 1;
   height: 50%;
@@ -24,7 +25,7 @@ const HomeContainer = styled.div`
 
 const CreateTitle = styled.h3`
   font-size: 48px;
-  color: white;
+  color: #162b4d;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 `;
